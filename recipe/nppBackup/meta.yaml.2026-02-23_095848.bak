@@ -23,7 +23,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=45.2,<81
+    - setuptools >=45
     - setuptools_scm >=6.2
   run:
     - babel
@@ -41,14 +41,14 @@ requirements:
     - python-slugify
     - pytz
     - requests
-    - setuptools >=45.2,<81
+    - setuptools >=45.2
     - watchdog
     - werkzeug <2.4
 
 test:
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
 
   imports:
     - {{ import }}
