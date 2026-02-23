@@ -23,7 +23,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=45.2,<81
+    - setuptools >=45
     - setuptools_scm >=6.2
   run:
     - babel
@@ -34,21 +34,21 @@ requirements:
     - inifile >=0.4.1
     - jinja2 >=3.0
     - markupsafe
-    - mistune >=0.7.0,<2
+    - mistune >=0.7.0, <2
     - nodejs
     - pip >=21.1
     - python >={{ python_min }}
     - python-slugify
     - pytz
     - requests
-    - setuptools >=45.2,<81
+    - setuptools >=45.2
     - watchdog
     - werkzeug <2.4
 
 test:
   requires:
-    - pip
     - python {{ python_min }}
+    - pip
 
   imports:
     - {{ import }}
